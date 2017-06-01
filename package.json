@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "description": "Coconut Calendar JS Embed SDK",
   "main": "index.js",
+  "scripts": {
+    "test": "ava tests"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/coconutcalendar/coconut-embed-js.git"
@@ -17,5 +20,25 @@
   "bugs": {
     "url": "https://github.com/coconutcalendar/coconut-embed-js/issues"
   },
-  "homepage": "https://github.com/coconutcalendar/coconut-embed-js#readme"
+  "homepage": "https://github.com/coconutcalendar/coconut-embed-js#readme",
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "ava": {
+    "babel": "inherit",
+    "require": [
+      "babel-register"
+    ],
+    "source": [
+      "src/*.js"
+    ]
+  },
+  "devDependencies": {
+    "ava": "^0.19.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "browser-env": "^2.0.31"
+  }
 }
