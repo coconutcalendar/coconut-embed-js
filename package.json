@@ -1,0 +1,21 @@
+{
+  "name": "coconut-embed-js",
+  "version": "0.0.0",
+  "description": "Coconut Calendar JS Embed SDK",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/coconutcalendar/coconut-embed-js.git"
+  },
+  "keywords": [
+    "coconut calendar",
+    "js",
+    "javascript",
+    "embed"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/coconutcalendar/coconut-embed-js/issues"
+  },
+  "homepage": "https://github.com/coconutcalendar/coconut-embed-js#readme"
+}
