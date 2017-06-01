@@ -26,7 +26,7 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 [ico-version]: https://img.shields.io/npm/v/coconut-embed-js.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
 [ico-coverage]: https://img.shields.io/coveralls/mzabriskie/coconut-embed-js.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/npm/dm/coconut-embed-js.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/npm/dt/coconut-embed-js.svg?style=flat-square
 
 [link-npm]: https://www.npmjs.org/package/coconut-embed-js
 [link-coverage]: https://coveralls.io/r/coconutcalendar/coconut-embed-js
