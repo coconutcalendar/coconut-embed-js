@@ -7,7 +7,27 @@
 
 ## Install
 
+Using npm:
+
+```bash
+$ npm install coconut-embed-js
+```
+
+Using yarn:
+
+```bash
+$ yarn add coconut-embed-js
+```
+
 ## Usage
+
+```js
+import CoconutCalendar from 'coconut-embed-js';
+
+const coconut = new CoconutCalendar('subdomain');
+
+coconut.embed('id');
+```
 
 ## Change log
 
