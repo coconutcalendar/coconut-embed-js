@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## [0.1.1] - 2017-06-02
+
+## Added
+- Adds dist files and build process [`053f3b8db7`](https://github.com/coconutcalendar/coconut-embed-js/commit/053f3b8db7) 
+
 ## [0.1.0] - 2017-06-01
 
 ### Added
