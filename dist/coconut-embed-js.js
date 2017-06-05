@@ -73,7 +73,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -83,27 +83,65 @@ return /******/ (function(modules) { // webpackBootstrap
 "use strict";
 
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = {
+  isFullUrl: function isFullUrl(url) {
+    var pattern = new RegExp(/^(https?:\/\/)/);
+
+    return pattern.test(url);
+  },
+  parameterize: function parameterize(object) {
+    return Object.keys(object).reduce(function (value, key, i) {
+      var delimiter = i === 0 ? '?' : '&';
+      var val = encodeURIComponent(object[key]);
+      key = encodeURIComponent(key);
+
+      return [value, delimiter, key, '=', val].join('');
+    }, '');
+  }
+};
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }(); /* eslint-disable no-undef */
+
+
+var _utils = __webpack_require__(0);
+
+var _utils2 = _interopRequireDefault(_utils);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var CoconutCalendar = function () {
-  function CoconutCalendar(subdomain) {
-    var width = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : '100%';
-    var height = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : '580px';
+  function CoconutCalendar(path) {
+    var params = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+    var width = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : '100%';
+    var height = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : '580px';
 
     _classCallCheck(this, CoconutCalendar);
 
+    this.path = path;
     this.width = width;
     this.height = height;
-    this.subdomain = subdomain;
+    this.params = _utils2.default.parameterize(params);
     this.iframe = document.createElement('iframe');
 
     this.iframe.setAttribute('seamless', true);
     this.iframe.setAttribute('frameborder', 0);
     this.iframe.setAttribute('width', this.width);
     this.iframe.setAttribute('height', this.height);
-    this.iframe.setAttribute('src', 'https://' + this.subdomain + '.coconutcalendar.com/embed');
+
+    var url = _utils2.default.isFullUrl(this.path) ? this.path + '/embed' : 'https://' + this.path + '.coconutcalendar.com/embed';
+    this.iframe.setAttribute('src', '' + url + this.params);
   }
 
   _createClass(CoconutCalendar, [{
