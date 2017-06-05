@@ -27,5 +27,7 @@
 - Updates testing dependencies [`02c819ac41`](https://github.com/coconutcalendar/coconut-embed-js/commit/02c819ac41) 
 - Initial commit [`d6890df9bf`](https://github.com/coconutcalendar/coconut-embed-js/commit/d6890df9bf) 
 
-[Unreleased]: https://github.com/coconutcraig/laravel-postmark/compare/0.1.0...HEAD
+[Unreleased]: https://github.com/coconutcraig/laravel-postmark/compare/0.2.0...HEAD
+[0.2.0]: https://github.com/coconutcraig/laravel-postmark/compare/0.1.1...0.2.0
+[0.1.1]: https://github.com/coconutcraig/laravel-postmark/compare/0.1.0...0.1.1
 [0.1.0]: https://github.com/coconutcraig/laravel-postmark/compare/0.0.1...0.1.0
