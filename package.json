@@ -1,6 +1,6 @@
 {
   "name": "coconut-embed-js",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Coconut Calendar JS Embed SDK",
   "main": "src/index.js",
   "scripts": {

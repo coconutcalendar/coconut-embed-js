@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## [0.2.1] - 2017-06-05
+
+### Added
+- Adds missing links to changelog [`3ed745bd6a`](https://github.com/coconutcalendar/coconut-embed-js/commit/3ed745bd6a)
+
+### Updated
+- Updates dist files [`3e0229e0c3`](https://github.com/coconutcalendar/coconut-embed-js/commit/3e0229e0c3) 
+- Updates package version [`c84a0d44cb`](https://github.com/coconutcalendar/coconut-embed-js/commit/c84a0d44cb) 
+
 ## [0.2.0] - 2017-06-05
 
 ### Added
@@ -27,7 +36,8 @@
 - Updates testing dependencies [`02c819ac41`](https://github.com/coconutcalendar/coconut-embed-js/commit/02c819ac41) 
 - Initial commit [`d6890df9bf`](https://github.com/coconutcalendar/coconut-embed-js/commit/d6890df9bf) 
 
-[Unreleased]: https://github.com/coconutcraig/laravel-postmark/compare/0.2.0...HEAD
+[Unreleased]: https://github.com/coconutcraig/laravel-postmark/compare/0.2.1...HEAD
+[0.2.1]: https://github.com/coconutcraig/laravel-postmark/compare/0.2.0...0.2.1
 [0.2.0]: https://github.com/coconutcraig/laravel-postmark/compare/0.1.1...0.2.0
 [0.1.1]: https://github.com/coconutcraig/laravel-postmark/compare/0.1.0...0.1.1
 [0.1.0]: https://github.com/coconutcraig/laravel-postmark/compare/0.0.1...0.1.0
