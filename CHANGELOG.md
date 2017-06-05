@@ -2,9 +2,18 @@
 
 ## [Unreleased]
 
+## [0.2.0] - 2017-06-05
+
+### Added
+- Adds ability to use full url and query string parameters [`fe534ef80a`](https://github.com/coconutcalendar/coconut-embed-js/commit/fe534ef80a) 
+- Adds util helpers [`abf4c4adfb`](https://github.com/coconutcalendar/coconut-embed-js/commit/abf4c4adfb)
+
+### Fixed
+- Fixes eslint issues [`e016302494`](https://github.com/coconutcalendar/coconut-embed-js/commit/e016302494) 
+
 ## [0.1.1] - 2017-06-02
 
-## Added
+### Added
 - Adds dist files and build process [`053f3b8db7`](https://github.com/coconutcalendar/coconut-embed-js/commit/053f3b8db7) 
 
 ## [0.1.0] - 2017-06-01
