@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 class CoconutCalendar {
   constructor(subdomain, width = '100%', height = '580px') {
     this.width = width;
