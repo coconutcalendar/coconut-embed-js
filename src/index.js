@@ -11,6 +11,7 @@ class CoconutCalendar {
 
     this.iframe.setAttribute('seamless', true);
     this.iframe.setAttribute('frameborder', 0);
+    this.iframe.setAttribute('allow', 'geolocation');
     this.iframe.setAttribute('width', this.width);
     this.iframe.setAttribute('height', this.height);
 
